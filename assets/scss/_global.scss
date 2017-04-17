@@ -1,0 +1,11 @@
+$font__serif: 'Bitter', serif;
+$font__sans: 'Merriweather Sans', sans-serif;
+$font__main: 'Bitter', serif;
+
+body {
+  font-family: $font__main;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font__sans;
+  }
+}
