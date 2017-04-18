@@ -275,6 +275,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/scss\/_colors.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/scss\/_custom.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -297,19 +310,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/css\/_footer.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/scss\/_global.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/css\/_global.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -375,6 +375,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/css\/_settings.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/scss\/_typography.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_typography.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
