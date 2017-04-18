@@ -1,65 +1,73 @@
-.container {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  width: 100vw;
-  height: 100vh;
-  @media screen and (max-width: 60em) {
-    grid-template-rows: repeat(4, 1fr);
-  }
+// TESTIMONIALS
+
+.testimonial-container {
+  background: $light-gray;
+  padding: 1rem 1rem;
 }
 
-// .grid-1,
-// .grid-2,
-// .grid-3,
-// .grid-4 {
-//   grid-template-rows: repeat(6, 1fr);
-//   grid-template-columns: repeat(6, 1fr);
-// }
-.grid-1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row: 1;
-  @media screen and (max-width: 60em) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 1;
-  }
-}
+.testimonial-slider-container {
+  background: $light-gray;
+  padding: 1rem 1rem;
 
-.grid-2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row: 1;
-  @media screen and (max-width: 60em) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 2;
-  }
-}
+  .orbit-previous,
+  .orbit-next {
+    color: $secondary-color;
 
-.grid-3 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row: 2;
-  @media screen and (max-width: 60em) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 3;
+    &:hover, &:active, &:focus {
+      background-color: transparent;
+    }
   }
-}
 
-.grid-4 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row: 2;
-  @media screen and (max-width: 60em) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 4;
+  .orbit-previous {
+    left: -1rem;
   }
-}
 
-.callout {
-  margin: 0;
+  .orbit-next {
+    right: -1rem;
+  }
+
+  .testimonial-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonial-slide-content {
+    padding: 1rem 1.5rem;
+
+    @media screen and (min-width: 40em) {
+      padding: 1rem 4rem;
+    }
+  }
+
+  .profile-pic {
+    max-width: 225px;
+  }
+
+  .testimonial-slide-text {
+    padding-left: 3rem;
+  }
+
+  .testimonial-slide-quotation {
+    font-size: 1.2rem;
+    position: relative;
+
+    &::before {
+      content: "“";
+      font-size: 6rem;
+      color: lighten($black, 80%);
+      position: absolute;
+      top: -3rem;
+      left: -3rem;
+    }
+  }
+
+  .testimonial-slide-author-container {
+    display: flex;
+
+    @include breakpoint(small only) {
+      .testimonial-slide-author-info {
+        margin-left: 1rem;
+      }
+    }
+  }
 }
