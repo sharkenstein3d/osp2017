@@ -6,7 +6,7 @@
 	    					</nav>
 	    				</div>
 						<div class="large-12 medium-12 columns">
-							<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+							<p class="source-org copyright">&copy; 2008-<?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All Rights Reserved.</p> 
 						</div>
 					</div> <!-- end #inner-footer -->
 				</footer> <!-- end .footer -->

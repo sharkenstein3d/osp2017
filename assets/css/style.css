@@ -5019,6 +5019,9 @@ body {
 .sticky-container {
   width: 100%; }
 
+.footer {
+  text-align: center; }
+
 /******************************************************************
 
 Stylesheet: Retina Screens & Devices Stylesheet

@@ -27,10 +27,10 @@
 	       </div>
 	       <div class="responsive-nav-social-right hide-for-small-only">
 	         <ul class="menu">
-	           <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+	           <li><a href="https://www.facebook.com/pages/Orchard-Street-Press/29146901557"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 	           <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 	           <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-	           <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	           <li><a href="https://www.twitter.com/OrchardStPress"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 	         </ul>
 	       </div>
 	     </div>
