@@ -21,6 +21,12 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
+	"\/_template_home.php": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/_template_home.php",
+		"oF": 0
+		},
 	"\/archive-custom_type.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -288,6 +294,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/scss\/_content.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/scss\/_custom.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -375,6 +394,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/css\/_settings.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/scss\/_structure.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_structure.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1110,6 +1142,36 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/vendor\/foundation-sites\/css\/foundation-flex.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/vendor\/foundation-sites\/css\/foundation-flex-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/vendor\/foundation-sites\/css\/foundation-rtl.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/vendor\/foundation-sites\/css\/foundation-rtl-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/vendor\/foundation-sites\/css\/foundation.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/vendor\/foundation-sites\/css\/foundation-min.css",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/vendor\/foundation-sites\/customizer\/complete.json": {
 		"ft": 524288,

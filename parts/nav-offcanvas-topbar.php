@@ -2,10 +2,7 @@
 	 <div class="responsive-nav-social-mobile" data-responsive-toggle="responsive-nav-social" data-hide-for="medium">
 	   <div class="responsive-nav-social-mobile-left">
 	     <ul class="menu">
-	       <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-	       <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-	       <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-	       <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				 <?php social_media_links(); ?>
 	     </ul>
 	   </div>
 	   <div class="responsive-nav-social-mobile-right">
@@ -18,19 +15,12 @@
 	     <div class="row align-justify align-middle" id="responsive-menu">
 	       <div class="responsive-nav-social-left">
 	         <ul class="menu vertical medium-horizontal">
-	           <li><a href="#">Home</a></li>
-	           <li><a href="#">Order</a></li>
-	           <li><a href="#">Services</a></li>
-	           <li><a href="#">Contact</a></li>
-	           <li><a href="#">Blog</a></li>
+	           <?php joints_top_nav(); ?>
 	         </ul>
 	       </div>
 	       <div class="responsive-nav-social-right hide-for-small-only">
 	         <ul class="menu">
-	           <li><a href="https://www.facebook.com/pages/Orchard-Street-Press/29146901557"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-	           <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-	           <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-	           <li><a href="https://www.twitter.com/OrchardStPress"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	           <?php social_media_links(); ?>
 	         </ul>
 	       </div>
 	     </div>

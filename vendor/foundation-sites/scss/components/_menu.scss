@@ -18,14 +18,6 @@ $menu-margin-nested: 1rem !default;
 /// @type Number
 $menu-item-padding: 0.7rem 1rem !default;
 
-/// Text color of an active menu item.
-/// @type Color
-$menu-item-color-active: $white !default;
-
-/// Background color of an active menu item.
-/// @type Color
-$menu-item-background-active: get-color(primary) !default;
-
 /// Spacing between an icon and text in a menu item.
 /// @type Number
 $menu-icon-spacing: 0.25rem !default;
@@ -307,8 +299,8 @@ $menu-border: $light-gray !default;
 
     // Active state
     .active > a {
-      background: $menu-item-background-active;
-      color: $menu-item-color-active;
+      background: $light-gray;
+      color: $primary-color;
     }
 
     // Menu with border
