@@ -3,11 +3,14 @@ $nav-padding: 1rem;
 $nav-text-color: $dark-gray;
 $nav-bg-color: $white;
 
+// NAV STYLES
+
 .responsive-nav-social-mobile {
   background: $nav-bg-color;
   display: flex;
   align-items: center;
   width: 100%;
+  overflow: visible;
 
   .responsive-nav-social-mobile-left {
     flex: 1 0 0;
@@ -100,6 +103,8 @@ $nav-bg-color: $white;
   width: 100%;
 }
 
+// HERO HEADER STYLES
+
 .hero {
 	background: url('<?php header_image(); ?>');
 	height: 60vh;
@@ -113,7 +118,7 @@ $nav-bg-color: $white;
   align-items: center;
 
 	@media screen and (min-width: $query__medium) {
-		height: 80vh;
+		height: 90vh;
 	}
 }
 
@@ -129,6 +134,39 @@ $nav-bg-color: $white;
 
 	@media screen and (min-width: $query__medium) {
 		height: 45%;
+		width: 65%;
+	}
+}
+
+.hero-smaller {
+  background: url('<?php header_image(); ?>');
+  height: 60vh;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: $query__medium) {
+    height: 30vh
+  }
+}
+
+.inner-hero-smaller {
+	padding: 1em;
+	height: 85%;
+	width: 90%;
+	background-color: rgba(107,107,107,.666);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@media screen and (min-width: $query__medium) {
+		height: 85%;
 		width: 65%;
 	}
 }

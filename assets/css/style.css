@@ -5013,7 +5013,7 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 #content #inner-content {
-  padding: 1rem 0rem; }
+  padding: 1rem 0rem 0rem 0rem; }
 
 .page-title .vcard {
   border: 0px;
@@ -5214,10 +5214,20 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
+.widgettitle {
+  color: #808e95; }
+
 .widget ul {
   margin: 0; }
   .widget ul li {
-    list-style: none; }
+    list-style: none;
+    margin-top: 1rem;
+    padding: .5em; }
+    .widget ul li:last-child {
+      margin-bottom: 1em; }
+    .widget ul li a {
+      background-color: #f5f5f5;
+      padding: 10px; }
 
 /*********************
 FOOTER STYLES
@@ -5271,6 +5281,19 @@ body {
   margin: 3rem 1rem 3rem 1rem;
   color: #f5f5f5; }
 
+.blog-header {
+  padding: 2rem; }
+
+.blog-entry-header {
+  width: 100%;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #808e95;
+  padding: 1rem;
+  border: 2px solid rgba(0, 172, 193, 0.3); }
+  .blog-entry-header a {
+    color: #808e95; }
+
 .img-circle {
   border-radius: 50%;
   padding-bottom: 1rem; }
@@ -5283,7 +5306,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%; }
+  width: 100%;
+  overflow: visible; }
   .responsive-nav-social-mobile .responsive-nav-social-mobile-left {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 0px;
@@ -5363,7 +5387,7 @@ body {
           align-items: center; }
   @media screen and (min-width: 640px) {
     .hero {
-      height: 80vh; } }
+      height: 90vh; } }
 
 .inner-hero {
   padding: 1em;
@@ -5386,6 +5410,53 @@ body {
   @media screen and (min-width: 640px) {
     .inner-hero {
       height: 45%;
+      width: 65%; } }
+
+.hero-smaller {
+  background: url("<?php header_image(); ?>");
+  height: 60vh;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media screen and (min-width: 640px) {
+    .hero-smaller {
+      height: 30vh; } }
+
+.inner-hero-smaller {
+  padding: 1em;
+  height: 85%;
+  width: 90%;
+  background-color: rgba(107, 107, 107, 0.666);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media screen and (min-width: 640px) {
+    .inner-hero-smaller {
+      height: 85%;
       width: 65%; } }
 
 .services-content-section {
@@ -5502,6 +5573,14 @@ body {
   @media screen and (max-width: 39.9375em) {
     .testimonial-slide-author-container .testimonial-slide-author-info {
       margin-left: 1rem; } }
+
+.sidebar {
+  background-color: #fefefe;
+  padding: 2rem; }
+
+.entry-content {
+  padding: 1rem;
+  margin: 2.5rem 0 2.5rem 0; }
 
 .footer {
   text-align: center;

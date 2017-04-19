@@ -703,6 +703,12 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/header-inner.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/header-inner.php",
+		"oF": 0
+		},
 	"\/header.php": {
 		"ft": 8192,
 		"oA": 0,

@@ -116,3 +116,17 @@
       }
     }
   }
+
+  // SIDEBAR
+
+  .sidebar {
+    background-color: $white;
+    padding: $global-padding-double;
+  }
+
+  // BLOG
+
+  .entry-content {
+    padding: $global-padding;
+    margin: 2.5rem 0 2.5rem 0;
+  }

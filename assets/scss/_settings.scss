@@ -74,6 +74,7 @@ $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: true;
 $print-transparent-backgrounds: true;
+$blog-border-color: rgba(0, 172, 193,.3);
 
 @include add-foundation-colors;
 

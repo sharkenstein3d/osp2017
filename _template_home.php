@@ -6,7 +6,7 @@ Template Name: Template Home
 
 <?php get_header(); ?>
 
-<h2 class="header-text-extra-space">Services We Offer</h2>
+<h2 id="services" class="header-text-extra-space">Services We Offer</h2>
 <div class="row">
   <div class="services-content-section">
     <div class="services-content-section-img">

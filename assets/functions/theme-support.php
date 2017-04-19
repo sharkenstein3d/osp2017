@@ -29,7 +29,7 @@ function joints_theme_support() {
 	$defaults = array(
 		'default-image'          => '',
 		'width'                  => 2000,
-		'height'                 => 850,
+		'height'                 => 1150,
 		'flex-height'            => false,
 		'flex-width'             => false,
 		'uploads'                => true,
