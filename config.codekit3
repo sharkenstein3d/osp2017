@@ -226,6 +226,15 @@
 		"oAP": "\/assets\/js\/foundation.min.js.map",
 		"oF": 0
 		},
+	"\/assets\/js\/min\/app-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/min\/min\/app-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/assets\/js\/scripts.js": {
 		"ft": 64,
 		"mi": 1,
@@ -784,6 +793,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/parts\/nav-topbar.php",
+		"oF": 0
+		},
+	"\/README.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/README.html",
 		"oF": 0
 		},
 	"\/README.md": {

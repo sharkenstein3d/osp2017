@@ -1,17 +1,17 @@
 // TESTIMONIALS
 
 .testimonial-container {
-  background: $light-gray;
+  background: $white;
   padding: 1rem 1rem;
 }
 
 .testimonial-slider-container {
-  background: $light-gray;
+  background: $white;
   padding: 1rem 1rem;
 
   .orbit-previous,
   .orbit-next {
-    color: $secondary-color;
+    color: $primary-color;
 
     &:hover, &:active, &:focus {
       background-color: transparent;
@@ -54,7 +54,7 @@
     &::before {
       content: "“";
       font-size: 6rem;
-      color: lighten($black, 80%);
+      color: lighten($black, 40%);
       position: absolute;
       top: -3rem;
       left: -3rem;
