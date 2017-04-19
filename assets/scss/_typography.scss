@@ -9,9 +9,40 @@ body {
     font-family: $font__sans;
     text-align: center;
   }
+
+  p {
+    text-align: center;
+  }
 }
 
 .services {
   color: $secondary-color;
   padding: $global-padding-double;
+}
+
+.services-desc-header {
+  width: 100%;
+  text-align: center;
+  background-color: $primary-color;
+  color: $white;
+  padding: $global-padding;
+}
+
+.services-desc {
+  margin-top: 2rem;
+  color: $black;
+  font-size: 1rem;
+    @media screen and (min-width: 50em) {
+      font-size: 1.5rem;
+    }
+}
+
+.header-text-extra-space {
+  margin: 3rem 1rem 3rem 1rem;
+  color: $dark-gray;
+}
+
+.header-text-extra-space-white {
+  margin: 3rem 1rem 3rem 1rem;
+  color: $light-gray;
 }
