@@ -14,6 +14,23 @@ body {
     text-align: center;
   }
 }
+.site-title {
+  text-shadow: rgba(90, 90, 90,.666) 1px 2px 3px;
+}
+.tagline {
+  font-size: 1em;
+  color: $light-gray;
+  margin-bottom: 1em;
+  text-shadow: rgba(90, 90, 90,.666) 1px 2px 2px;
+
+  @media screen and (min-width: 40em){
+    font-size: 1.5em;
+  }
+
+  @media screen and (min-width: 50em){
+    font-size: 2em;
+  }
+}
 
 .services {
   color: $secondary-color;

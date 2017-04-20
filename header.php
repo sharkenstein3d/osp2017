@@ -53,8 +53,10 @@
            <div class="hero" style="background-image: url('<?php header_image(); ?>')">
          		<div class="inner-hero">
          			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-         			<p><?php bloginfo('description'); ?> </p>
-         			<a href="order.html" class="button">Start Your Order</a>
+         			<h3 class="tagline"><?php bloginfo('description'); ?> </h3>
+         			<a href="order.html" class="show-for-small-only button small">Start Your Order</a>
+              <a href="order.html" class="show-for-medium-only button">Start Your Order</a>
+              <a href="order.html" class="show-for-large button large">Start Your Order</a>
          		</div>
          	</div>
          </div>

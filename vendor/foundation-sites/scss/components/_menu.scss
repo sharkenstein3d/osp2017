@@ -297,12 +297,6 @@ $menu-border: $light-gray !default;
       @include menu-nested;
     }
 
-    // Active state
-    .active > a {
-      background: $light-gray;
-      color: $primary-color;
-    }
-
     // Menu with border
     &.menu-bordered {
       li {
