@@ -64,6 +64,15 @@ body {
   color: $light-gray;
 }
 
+// BLOG
+
+.byline {
+  font-size: .8em;
+
+  @media screen and (min-width: 40em){
+    font-size: 1em;
+  }
+}
 .blog-header {
   padding: $global-padding-double;
 }
@@ -71,12 +80,16 @@ body {
 .blog-entry-header {
   width: 100%;
   text-align: center;
-  background-color: $light-gray;
+  background-color: $white;
   color: $medium-gray;
   padding: $global-padding;
-  border: 2px solid $blog-border-color;
+  border-bottom: 3px dotted $medium-gray;
 
   a {
     color: $medium-gray;
   }
+}
+
+.blog-post {
+  font-size: 1em;
 }

@@ -1,29 +1,34 @@
+<?php
+/*
+Template Name: Blog
+*/
+?>
 <?php get_template_part( 'header-inner' ); ?>
 
 	<div id="content">
+		<h1 class="header-text-extra-space">The Motherfucking Haps</h1>
 
-		<div id="inner-content" class="row">
+		<div id="inner-content" class="row" data-equalizer>
+			<?php
+				global $query_string;
+			  query_posts ('posts_per_page=4');
+		    if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		    <main id="main" class="small-12 large-8 columns" role="main">
+				<!-- To see additional archive styles, visit the /parts directory -->
+				<?php get_template_part( 'parts/loop', 'archive' ); ?>
 
-			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<?php endwhile; ?>
 
-					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive' ); ?>
+				<?php joints_page_navi(); ?>
 
-				<?php endwhile; ?>
+			<?php else : ?>
 
-					<?php joints_page_navi(); ?>
+				<?php get_template_part( 'parts/content', 'missing' ); ?>
 
-				<?php else : ?>
+			<?php endif; ?>
 
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
 
-				<?php endif; ?>
-
-		    </main> <!-- end #main -->
-
-					<?php get_sidebar(); ?>
+			<?php get_sidebar(); ?>
 
 		</div> <!-- end #inner-content -->
 

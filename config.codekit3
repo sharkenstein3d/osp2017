@@ -244,6 +244,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/assets\/js\/min\/GoogleMaps-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/min\/min\/GoogleMaps-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/assets\/js\/scripts.js": {
 		"ft": 64,
 		"mi": 1,
@@ -658,6 +667,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/translation\/zh_CN.po",
+		"oF": 0
+		},
+	"\/blog.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blog.php",
 		"oF": 0
 		},
 	"\/bower.json": {

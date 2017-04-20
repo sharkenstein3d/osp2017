@@ -4,6 +4,10 @@
   background-color: $success-color;
   margin-top: 0;
   padding: $global-padding;
+
+  @media screen and (min-width: 45em){
+    padding: $global-padding-double;
+  }
 }
 
 $contact-us-section-padding: 2rem;
@@ -120,4 +124,12 @@ $contact-us-section-bg: $light-gray;
   }
 
 
+}
+
+.footer-copyright {
+  font-size: .8em;
+
+  @media screen and (min-width: 40em){
+    font-size: 1em;
+  }
 }

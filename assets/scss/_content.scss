@@ -36,6 +36,37 @@
 }
 
 
+// EMAIL SIGNUP
+
+$subscription-form-color: $white;
+$subscription-form-padding: rem-calc(32);
+
+
+.simple-subscription-form {
+  background: $dark-gray;
+  color: $subscription-form-color;
+  padding: $subscription-form-padding;
+  border-radius: $global-radius;
+
+  .button {
+    margin-bottom: 0;
+    border-radius: 0 $global-radius $global-radius 0;
+  }
+}
+
+.subscribe {
+  width: 95%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 45em) {
+    max-width: 65%;
+  }
+
+  @media screen and (min-width: 60em) {
+    max-width: 45%;
+  }
+}
+
 
 
 // TESTIMONIALS
@@ -120,7 +151,7 @@
   // SIDEBAR
 
   .sidebar {
-    background-color: $white;
+    background-color: $dark-gray;
     padding: $global-padding-double;
   }
 
@@ -129,4 +160,14 @@
   .entry-content {
     padding: $global-padding;
     margin: 2.5rem 0 2.5rem 0;
+  }
+
+  .featured-image {
+    @media screen and (min-width: 59em) {
+      max-height: 315px;
+    }
+  }
+  .widget_recent_entries {
+    background-color: $light-gray;
+    padding: $global-padding;
   }
