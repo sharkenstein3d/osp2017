@@ -5,40 +5,50 @@ Template Name: Template Home
 ?>
 
 <?php get_header(); ?>
+<?php $printing_desc = get_field('screen_printing_description'); ?>
+<?php $printing_photo = get_field('screen_printing_photo'); ?>
+<?php $finishing_desc = get_field('finishing_description'); ?>
+<?php $finishing_photo = get_field('finishing_photo'); ?>
+<?php $graphic_design_desc = get_field('graphic_design_description'); ?>
+<?php $graphic_design_photo = get_field('graphic_design_photo'); ?>
+<?php $embroidery_desc = get_field('embroidery_description'); ?>
+<?php $embroidery_photo = get_field('embroidery_photo'); ?>
+
 
 <h2 id="services" class="header-text-extra-space">Services We Offer</h2>
 <div class="row">
   <div class="services-content-section">
     <div class="services-content-section-img">
-      <img src="http://www.fillmurray.com/800/800" alt="" />
+      <img src="<?php echo $printing_photo; ?>" alt="" />
+
     </div>
     <div class="services-content-section-block">
       <h3 class="services-desc-header">Custom Screen Printing</h3>
-      <p class="services-desc">Band t-shirts, some shit about your local area, maybe some towels. Whatever! Bring it on, and we'll print some shit on it.</p>
+      <p class="services-desc"><?php echo $printing_desc; ?></p>
     </div>
     <div class="services-content-section-block small-order-2 medium-order-1">
       <h3 class="services-desc-header">Retail-Ready Finishing</h3>
-      <p class="services-desc">Need more than just shirts? How about some plastic for the landfill? Or some paper tags you'll just throw away? Say no more!</p>
+      <p class="services-desc"><?php echo $finishing_desc; ?></p>
     </div>
     <div class="services-content-section-img small-order-1 medium-order-2">
-      <img src="http://www.fillmurray.com/g/800/800" alt="" />
+      <img src="<?php echo $finishing_photo; ?>" alt="" />
     </div>
   </div>
 
   <div class="services-content-section">
     <div class="services-content-section-img">
-      <img src="http://www.placebeard.it/800/800" alt="" />
+      <img src="<?php echo $graphic_design_photo; ?>" alt="" />
     </div>
     <div class="services-content-section-block">
       <h3 class="services-desc-header">Professional Graphic Design</h3>
-      <p class="services-desc">No, your shit definitely isn't good enough. Trust us to do your dirty work.</p>
+      <p class="services-desc"><?php echo $graphic_design_desc; ?></p>
     </div>
     <div class="services-content-section-block small-order-2 medium-order-1">
       <h3 class="services-desc-header">Custom Embroidery</h3>
-      <p class="services-desc">If you're too good and fancy for just regular-ass screen printing, you can always get some embroidery done!</p>
+      <p class="services-desc"><?php echo $embroidery_desc; ?></p>
     </div>
     <div class="services-content-section-img small-order-1 medium-order-2">
-      <img src="http://www.placebeard.it/800x800" alt="" />
+      <img src="<?php echo $embroidery_photo; ?>" alt="" />
     </div>
   </div>
 </div>
@@ -72,95 +82,33 @@ Template Name: Template Home
 
         <!-- content slide 1 -->
 
-        <li class="is-active orbit-slide">
-          <div class="testimonial-slide row">
-            <div class="small-12 large-9 column">
-              <div class="row align-middle testimonial-slide-content">
-                <div class="small-12 medium-4 column hide-for-small-only profile-pic">
-                  <img src="http://placekitten.com/g/300/300">
-                </div>
-                <div class="small-12 medium-8 column testimonial-slide-text">
-                  <p class="testimonial-slide-quotation">Even though they've printed shirts for dogs, I still got love for them.</p>
-                  <div class="testimonial-slide-author-container">
-                    <div class="small-profile-pic show-for-small-only">
-                      <img src="http://placekitten.com/g/50/50">
+        <?php if ( have_rows('testimonial') );
+
+          while ( have_rows('testimonial') ): the_row(); ?>
+
+            <li class="orbit-slide">
+              <div class="testimonial-slide row">
+                <div class="small-12 large-9 column">
+                  <div class="row align-middle testimonial-slide-content">
+                    <div class="small-12 medium-4 column hide-for-small-only profile-pic">
+                      <img src="<?php the_sub_field('customer_image'); ?>">
                     </div>
-                    <p class="testimonial-slide-author-info">Fleas Witherspoon<br><i class="subheader">Cat World Inc.</i></p>
+                    <div class="small-12 medium-8 column testimonial-slide-text">
+                      <p class="testimonial-slide-quotation"><?php the_sub_field('customer_testimonial') ?></p>
+                      <div class="testimonial-slide-author-container">
+                        <div class="small-profile-pic show-for-small-only">
+                          <img src="http://www.fillmurray.com/g/75/75">
+                        </div>
+                        <p class="testimonial-slide-author-info"><?php the_sub_field('customer') ?><br><i class="subheader"><?php the_sub_field('customer_organization') ?></i></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </li>
+            </li>
 
-        <!--content slide 2 -->
+          <?php endwhile; ?>
 
-        <li class="orbit-slide">
-          <div class="testimonial-slide row">
-            <div class="small-12 large-9 column">
-              <div class="row align-middle testimonial-slide-content">
-                <div class="small-12 medium-4 column hide-for-small-only profile-pic">
-                  <img src="http://www.fillmurray.com/g/300/300">
-                </div>
-                <div class="small-12 medium-8 column testimonial-slide-text">
-                  <p class="testimonial-slide-quotation">I asked for a shirt with the shape of Wisconsin on it and they totally delivered.</p>
-                  <div class="testimonial-slide-author-container">
-                    <div class="small-profile-pic show-for-small-only">
-                      <img src="http://www.fillmurray.com/g/75/75">
-                    </div>
-                    <p class="testimonial-slide-author-info">Bill Murray<br><i class="subheader">Zero Fucks Given, Inc.</i></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <!-- content slide 3 -->
-
-        <li class="orbit-slide">
-          <div class="testimonial-slide row">
-            <div class="small-12 large-9 column">
-              <div class="row align-middle testimonial-slide-content">
-                <div class="small-12 medium-4 column hide-for-small-only profile-pic">
-                  <img src="http://placebeard.it/300x300">
-                </div>
-                <div class="small-12 medium-8 column testimonial-slide-text">
-                  <p class="testimonial-slide-quotation">The bathroom smells wonderful.</p>
-                  <div class="testimonial-slide-author-container">
-                    <div class="small-profile-pic show-for-small-only">
-                      <img src="http://placebeard.it/75x75">
-                    </div>
-                    <p class="testimonial-slide-author-info">Some Other Motherfucker<br><i class="subheader">Taco Hut, Inc.</i></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <!-- content slide 4 -->
-
-        <li class="orbit-slide">
-          <div class="testimonial-slide row">
-            <div class="small-12 large-9 column">
-              <div class="row align-middle testimonial-slide-content">
-                <div class="small-12 medium-4 column hide-for-small-only profile-pic">
-                  <img src="http://placebeard.it/g/300/300">
-                </div>
-                <div class="small-12 medium-8 column testimonial-slide-text">
-                  <p class="testimonial-slide-quotation">I think Fleas Witherspoon took a shit in the bathroom!</p>
-                  <div class="testimonial-slide-author-container">
-                    <div class="small-profile-pic show-for-small-only">
-                      <img src="http://placebeard.it/g/75/75">
-                    </div>
-                    <p class="testimonial-slide-author-info">Some Motherfucker<br><i class="subheader">Mofos, Inc.</i></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
       </ul>
     </div>
   </div>

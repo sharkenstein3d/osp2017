@@ -1,4 +1,4 @@
-				<section class="contact-us-section">
+				<section id="contact" class="contact-us-section">
 					<div class="row medium-unstack">
 					<div class="columns contact-us-section-left">
 					<h1 class="contact-us-header">Get In Touch</h1>

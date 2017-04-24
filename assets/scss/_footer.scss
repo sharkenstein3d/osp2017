@@ -18,13 +18,13 @@ $contact-us-section-bg: $light-gray;
   background: $contact-us-section-bg;
 
   .contact-us-section-left {
-    padding-right: $contact-us-section-padding;
-    border-bottom: 2px solid $light-gray;
+
+    border-bottom: 2px solid $medium-gray;
     padding-bottom: $contact-us-section-padding;
     margin-bottom: $contact-us-section-padding;
 
     @include breakpoint(medium) {
-      border-right: 1px solid $light-gray;
+      margin-right: 1rem;
       border-bottom: 0;
       padding-bottom: 0;
       margin-bottom: 0;
@@ -32,10 +32,9 @@ $contact-us-section-bg: $light-gray;
   }
 
   .contact-us-section-right {
-    padding-left: $contact-us-section-padding;
 
     @include breakpoint(medium) {
-      border-left: 1px solid $light-gray;
+      margin-left: 1rem;
     }
   }
 

@@ -55,8 +55,9 @@ body {
 }
 
 .header-text-extra-space {
-  margin: 3rem 1rem 3rem 1rem;
+  padding: 3rem 1rem 3rem 1rem;
   color: $dark-gray;
+  margin-bottom: 0;
 }
 
 .header-text-extra-space-white {
@@ -77,6 +78,18 @@ body {
   padding: $global-padding-double;
 }
 
+.entry-title {
+  text-transform: uppercase;
+}
+
+.comments-title span {
+  text-transform: uppercase;
+}
+
+.single-title {
+  margin-top: 2em;
+}
+
 .blog-entry-header {
   width: 100%;
   text-align: center;
@@ -92,4 +105,18 @@ body {
 
 .blog-post {
   font-size: 1em;
+}
+
+.entry-content-single {
+  font-size: 1.2em;
+  padding: $global-padding-double;
+  color: $primary-color;
+}
+
+.comments-title {
+  color: $dark-gray;
+}
+
+.media-object-section p {
+  color: $medium-gray;
 }

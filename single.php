@@ -1,24 +1,30 @@
-<?php get_header(); ?>
-			
+<?php get_template_part( 'header-inner' ); ?>
+
 <div id="content">
 
-	<div id="inner-content" class="row">
+	<div class="row align-center">
 
-		<main id="main" class="large-8 medium-8 columns" role="main">
-		
+		<div class="small-12 medium-10 columns" role="main">
+
 		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		
+
 		    	<?php get_template_part( 'parts/loop', 'single' ); ?>
-		    	
+
 		    <?php endwhile; else : ?>
-		
+
 		   		<?php get_template_part( 'parts/content', 'missing' ); ?>
 
 		    <?php endif; ?>
 
-		</main> <!-- end #main -->
+		</div> <!-- end #main -->
+		<div class="small-10 columns">
+			<?php comments_template(); ?>
+		</div>
+		<div id="sidebar1" class="small-10 large-6 columns">
 
-		<?php get_sidebar(); ?>
+			<?php get_sidebar(); ?>
+		</div>
+
 
 	</div> <!-- end #inner-content -->
 

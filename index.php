@@ -1,17 +1,12 @@
-<?php
-/*
-Template Name: Blog
-*/
-?>
 <?php get_template_part( 'header-inner' ); ?>
 
 	<div id="content">
-		<h1 class="header-text-extra-space">The Motherfucking Haps</h1>
+		<h1 class="header-text-extra-space">Orchard Street Press: The Blog</h1>
 
-		<div id="inner-content" class="row" data-equalizer>
+		<div class="row align-center">
+			<div class="small-12 medium-10 large-6 columns">
+
 			<?php
-				global $query_string;
-			  query_posts ('posts_per_page=4');
 		    if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 				<!-- To see additional archive styles, visit the /parts directory -->
@@ -19,19 +14,19 @@ Template Name: Blog
 
 			<?php endwhile; ?>
 
-				<?php joints_page_navi(); ?>
-
 			<?php else : ?>
 
 				<?php get_template_part( 'parts/content', 'missing' ); ?>
 
 			<?php endif; ?>
-
-
-			<?php get_sidebar(); ?>
-
+			</div>
+			<div id="sidebar1" class="small-12 medium-10 large-3 columns">
+				<div class="pagination">
+					<?php joints_page_navi(); ?>
+				</div>
+				<?php get_sidebar(); ?>
+			</div>
 		</div> <!-- end #inner-content -->
-
 	</div> <!-- end #content -->
 
 <?php get_footer(); ?>
