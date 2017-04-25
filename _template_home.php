@@ -72,7 +72,7 @@ Template Name: Template Home
 
 
 <div class="testimonial-container">
-  <h2 class="header-text-extra-space-white">What Motherfuckers Be Saying</h2>
+  <h2 class="header-text-extra-space-white">Customer Testimonials</h2>
 
   <div class="row">
     <div class="orbit testimonial-slider-container" role="region" aria-label="testimonial-slider" data-orbit>
@@ -97,7 +97,7 @@ Template Name: Template Home
                       <p class="testimonial-slide-quotation"><?php the_sub_field('customer_testimonial') ?></p>
                       <div class="testimonial-slide-author-container">
                         <div class="small-profile-pic show-for-small-only">
-                          <img src="http://www.fillmurray.com/g/75/75">
+                          <img src="<?php the_sub_field('customer_image'); ?>">
                         </div>
                         <p class="testimonial-slide-author-info"><?php the_sub_field('customer') ?><br><i class="subheader"><?php the_sub_field('customer_organization') ?></i></p>
                       </div>

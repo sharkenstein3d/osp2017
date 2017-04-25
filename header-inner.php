@@ -53,7 +53,7 @@
            <div class="hero-smaller" style="background-image: url('<?php header_image(); ?>')">
          		<div class="inner-hero-smaller">
          			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-         			<p><?php bloginfo('description'); ?> </p>
+         			<h3 class="tagline"><?php bloginfo('description'); ?> </h3>
          		</div>
          	</div>
          </div>

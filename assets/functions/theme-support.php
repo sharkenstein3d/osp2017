@@ -9,6 +9,9 @@ function joints_theme_support() {
 	// Default thumbnail size
 	set_post_thumbnail_size(125, 125, true);
 
+	// Blog Image Size
+	add_image_size( 'blog-image', 420, 9999 ); //300 pixels wide (and unlimited height)
+
 	// Add RSS Support
 	add_theme_support( 'automatic-feed-links' );
 
@@ -63,3 +66,16 @@ function joints_theme_support() {
 } /* end theme support */
 
 add_action( 'after_setup_theme', 'joints_theme_support' );
+
+function et_excerpt_length($length) {
+    return 30;
+}
+add_filter('excerpt_length', 'et_excerpt_length');
+
+/* Add a link  to the end of our excerpt contained in a div for styling purposes and to break to a new line on the page.*/
+
+function et_excerpt_more($more) {
+    global $post;
+    return '<div class="view-full-post"><a href="'. get_permalink($post->ID) . '" class="button centered">View Full Post</a></div>';
+}
+add_filter('excerpt_more', 'et_excerpt_more');

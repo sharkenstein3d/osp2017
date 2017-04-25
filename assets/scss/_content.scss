@@ -73,7 +73,7 @@ $subscription-form-padding: rem-calc(32);
 // TESTIMONIALS
 
 .testimonial-container {
-  background: $medium-gray;
+  background: $success-color;
   padding: 1rem 1rem;
 }
 
@@ -159,21 +159,48 @@ $subscription-form-padding: rem-calc(32);
 
     a {
       &:hover {
-        color: $dark-gray;
+        color: $anchor-color-hover;
       }
     }
   }
 }
 
 .widgettitle {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 // BLOG
+.card {
+  margin-bottom: 2rem;
+  border: .666rem solid $light-gray;
+  box-shadow: 1px 1px 1px $medium-gray;
+}
 
 .featured-image {
-  height: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.single-title {
+  color: $dark-gray;
+}
+
+.entry-content-single {
+  padding: .3em;
+
+  @include breakpoint(medium) {
+
+    padding: 1em;
+
+  }
+}
+.entry-content-single > p {
+  color: $black;
+}
+
+.entry-content-single > h1, h2, h3, h4, h5, h6 {
+  padding: $global-padding-double;
 }
 
 .entry-content {
@@ -221,4 +248,19 @@ p.comment-notes {
 
 .pagination {
   text-align: center;
+}
+
+blockquote {
+font-style: italic;
+background-color: $light-gray;
+font-size: 1.2em;
+margin-top: 2rem;
+margin-bottom: 1rem;
+padding: .5rem 1rem;
+border-left: .25rem solid $secondary-color;
+display: block;
+}
+
+.view-full-post {
+  float: right;
 }

@@ -51,15 +51,15 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #00acc1,
-  secondary: #005f63,
-  success: #007c91,
-  warning: #003539,
+  secondary: #00899A,
+  success: #66b8c2,
+  warning: #99cfd6,
   alert: #5ddef4,
 );
-$light-gray: #f5f5f5;
-$medium-gray: #808e95;
-$dark-gray: #4b636e;
-$black: #003539;
+$light-gray: #F5F5F5;
+$medium-gray: #c4c4c4;
+$dark-gray: #626262;
+$black: #313131;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
@@ -148,7 +148,7 @@ $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
 $anchor-color: $primary-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color-hover: scale-color($anchor-color, $lightness: -20%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;

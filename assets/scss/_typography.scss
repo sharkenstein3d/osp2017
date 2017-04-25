@@ -1,5 +1,5 @@
 $font__serif: 'Bitter', serif;
-$font__sans: 'Merriweather Sans', sans-serif;
+$font__sans: 'Palanquin Dark', sans-serif;
 $font__main: 'Bitter', serif;
 
 body {
@@ -12,10 +12,26 @@ body {
 
   p {
     text-align: center;
+    font-size: .8em;
+
+    @include breakpoint(medium) {
+      font-size: 1em;
+
+    }
   }
 }
 .site-title {
   text-shadow: rgba(90, 90, 90,.666) 1px 2px 3px;
+  font-size: 2em;
+
+  @include breakpoint(medium) {
+    font-size: 3em;
+  }
+
+   @include breakpoint(large) {
+     font-size: 4em;
+
+   }
 }
 .tagline {
   font-size: 1em;
@@ -80,6 +96,7 @@ body {
 
 .entry-title {
   text-transform: uppercase;
+  padding: $global-padding;
 }
 
 .comments-title span {
@@ -111,6 +128,16 @@ body {
   font-size: 1.2em;
   padding: $global-padding-double;
   color: $primary-color;
+
+  li {
+    color: $dark-gray;
+    font-size: .9em;
+
+    @include breakpoint(medium) {
+      font-size: 1.2em;
+
+    }
+  }
 }
 
 .comments-title {
@@ -119,4 +146,14 @@ body {
 
 .media-object-section p {
   color: $medium-gray;
+}
+
+.archive-title {
+  color: $medium-gray;
+}
+
+.blog-title {
+  color: $medium-gray;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }

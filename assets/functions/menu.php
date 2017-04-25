@@ -3,7 +3,7 @@
 register_nav_menus(
 	array(
 		'main-nav' => __( 'The Main Menu', 'jointswp' ),   // Main nav in header
-		'footer-links' => __( 'Footer Links', 'jointswp' ), // Secondary nav in footer
+		'blog-header-links' => __( 'Blog Header Links', 'jointswp' ), // Secondary nav on blog page
 		'social-links' => __( 'Social Media Links', 'jointswp' ) // Social media nav in header
 	)
 );

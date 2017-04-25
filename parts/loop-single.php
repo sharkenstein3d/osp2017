@@ -5,13 +5,13 @@
 		<?php get_template_part( 'parts/content', 'byline' ); ?>
     </header> <!-- end article header -->
 
+				<?php the_post_thumbnail('large'); ?>
+
 		<section class="entry-content-single" itemprop="articleBody">
 
 			<?php the_content(); ?>
 
 	</section> <!-- end article section -->
-
-		<?php the_post_thumbnail('large'); ?>
 
 </article> <!-- end article -->
 

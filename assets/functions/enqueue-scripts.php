@@ -18,7 +18,7 @@ function site_scripts() {
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
 
     // Add Google Fonts
-    wp_enqueue_style( 'osp-fonts', 'https://fonts.googleapis.com/css?family=Bitter:400,400i,700|Merriweather+Sans:700,800' );
+    wp_enqueue_style( 'osp-fonts', 'https://fonts.googleapis.com/css?family=Bitter:400,400i,700|Palanquin+Dark:600,700' );
 
 
 

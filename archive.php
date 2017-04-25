@@ -1,37 +1,35 @@
-<?php get_header(); ?>
-			
-	<div id="content">
-	
-		<div id="inner-content" class="row">
-		
-		    <main id="main" class="large-8 medium-8 columns" role="main">
-			    
-		    	<header>
-		    		<h1 class="page-title"><?php the_archive_title();?></h1>
-					<?php the_archive_description('<div class="taxonomy-description">', '</div>');?>
-		    	</header>
-		
-		    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			 
-					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive' ); ?>
-				    
-				<?php endwhile; ?>	
+<?php get_template_part( 'header-inner' ); ?>
 
+	<div id="content">
+		<header>
+			<h2 class="archive-title"><?php the_archive_title();?></h1>
+		<?php the_archive_description('<div class="taxonomy-description">', '</div>');?>
+		</header>
+
+		<div class="row align-center">
+			<div class="small-12 medium-10 large-6 columns">
+
+			<?php
+		    if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+				<!-- To see additional archive styles, visit the /parts directory -->
+				<?php get_template_part( 'parts/loop', 'archive' ); ?>
+
+			<?php endwhile; ?>
+
+			<?php else : ?>
+
+				<?php get_template_part( 'parts/content', 'missing' ); ?>
+
+			<?php endif; ?>
+			</div>
+			<div id="sidebar1" class="small-12 medium-10 large-3 columns">
+				<div class="pagination">
 					<?php joints_page_navi(); ?>
-					
-				<?php else : ?>
-											
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
-						
-				<?php endif; ?>
-		
-			</main> <!-- end #main -->
-	
-			<?php get_sidebar(); ?>
-	    
-	    </div> <!-- end #inner-content -->
-	    
+				</div>
+				<?php get_sidebar(); ?>
+			</div>
+		</div> <!-- end #inner-content -->
 	</div> <!-- end #content -->
 
 <?php get_footer(); ?>

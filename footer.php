@@ -28,7 +28,6 @@
 					</div>
 				</section>
 
-
 				<footer class="footer" role="contentinfo">
 					<p class="footer-copyright">&copy; 2008-<?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All Rights Reserved.</p>
 				</footer> <!-- end .footer -->

@@ -1,7 +1,7 @@
 .footer {
   text-align: center;
   color: $white;
-  background-color: $success-color;
+  background-color: $secondary-color;
   margin-top: 0;
   padding: $global-padding;
 
@@ -16,6 +16,13 @@ $contact-us-section-bg: $light-gray;
 .contact-us-section {
   padding: $contact-us-section-padding;
   background: $contact-us-section-bg;
+
+  @media screen and (max-width: 320px) {
+    li {
+      font-size: .8em;
+
+    }
+  }
 
   .contact-us-section-left {
 
@@ -39,6 +46,7 @@ $contact-us-section-bg: $light-gray;
   }
 
   .contact-us-header {
+    color: $dark-gray;
     margin-bottom: $contact-us-section-padding;
 
     @media screen and #{breakpoint(medium)} and #{breakpoint(large down)} {
@@ -99,6 +107,7 @@ $contact-us-section-bg: $light-gray;
     content: '\f041';
     margin-left: 0.4rem;
     margin-right: 2.3rem;
+
   }
 
   .email::before {
