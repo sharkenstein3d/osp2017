@@ -1,8 +1,6 @@
 <?php get_template_part( 'header-inner' ); ?>
 
 	<div id="content">
-		<h1 class="blog-title">Orchard Street Press: The Blog</h1>
-
 		<div class="row align-center">
 			<div class="small-12 medium-10 large-6 columns">
 

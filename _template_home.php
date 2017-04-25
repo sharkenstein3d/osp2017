@@ -15,7 +15,7 @@ Template Name: Template Home
 <?php $embroidery_photo = get_field('embroidery_photo'); ?>
 
 
-<h2 id="services" class="header-text-extra-space">Services We Offer</h2>
+<h2 id="services" class="header-text-extra-space">Services We Provide</h2>
 <div class="row">
   <div class="services-content-section">
     <div class="services-content-section-img">
@@ -56,63 +56,79 @@ Template Name: Template Home
 <div class="simple-subscription-form">
   <div class="subscribe">
     <form>
-      <h4>Subscribe</h4>
-      <p>Receive updates, specials, all sorts of shit:</p>
-      <div class="input-group">
+      <h4>Subscribe to Our Mailing List</h4>
+      <p>You know you want to!</p>
+      <div class="input-group" data-equalizer>
         <span class="input-group-label">
           <i class="fa fa-envelope"></i>
         </span>
-        <input class="input-group-field" type="email" placeholder="Email" required>
-        <button class="button">Sign up</button>
+        <input class="input-group-field" type="email" placeholder="Email" required data-equalizer-watch>
+        <button class="button" data-equalizer-watch>Sign up</button>
       </div>
     </form>
   </div>
 </div>
 
 
-
-<div class="testimonial-container">
-  <h2 class="header-text-extra-space-white">Customer Testimonials</h2>
-
+<div id="portfolio-container">
+  <h2 class="portfolio-header">Portfolio</h2>
   <div class="row">
-    <div class="orbit testimonial-slider-container" role="region" aria-label="testimonial-slider" data-orbit>
-      <ul class="orbit-container">
-        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-        <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
 
-        <!-- content slide 1 -->
 
-        <?php if ( have_rows('testimonial') );
+    <section class="portfolio">
+  <?php
 
-          while ( have_rows('testimonial') ): the_row(); ?>
+$images = get_field('portfolio');
 
-            <li class="orbit-slide">
-              <div class="testimonial-slide row">
-                <div class="small-12 large-9 column">
-                  <div class="row align-middle testimonial-slide-content">
-                    <div class="small-12 medium-4 column hide-for-small-only profile-pic">
-                      <img src="<?php the_sub_field('customer_image'); ?>">
-                    </div>
-                    <div class="small-12 medium-8 column testimonial-slide-text">
-                      <p class="testimonial-slide-quotation"><?php the_sub_field('customer_testimonial') ?></p>
-                      <div class="testimonial-slide-author-container">
-                        <div class="small-profile-pic show-for-small-only">
-                          <img src="<?php the_sub_field('customer_image'); ?>">
+if( $images ): ?>
+      <?php foreach( $images as $image ): ?>
+  <div><img src="<?php echo $image['sizes']['portfolio']; ?>" alt="<?php echo $image['alt']; ?>" /></div>
+<?php endforeach; ?>
+<?php endif; ?>
+
+    </section class="portfolio">
+  </div>
+</div>
+
+  <div class="testimonial-container">
+    <h2 class="header-text-extra-space-white">Customer Testimonials</h2>
+      <div class="orbit testimonial-slider-container" role="region" aria-label="testimonial-slider" data-orbit>
+        <ul class="orbit-container">
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+
+          <!-- content slide 1 -->
+
+          <?php if ( have_rows('testimonial') );
+
+            while ( have_rows('testimonial') ): the_row(); ?>
+
+              <li class="orbit-slide">
+                <div class="testimonial-slide row">
+                  <div class="small-12 large-9 column">
+                    <div class="row align-middle testimonial-slide-content">
+                      <div class="small-12 medium-4 column hide-for-small-only profile-pic">
+                        <img src="<?php the_sub_field('customer_image'); ?>">
+                      </div>
+                      <div class="small-12 medium-8 column testimonial-slide-text">
+                        <p class="testimonial-slide-quotation"><?php the_sub_field('customer_testimonial') ?></p>
+                        <div class="testimonial-slide-author-container">
+                          <div class="small-profile-pic show-for-small-only">
+                            <img src="<?php the_sub_field('customer_image'); ?>">
+                          </div>
+                          <p class="testimonial-slide-author-info"><?php the_sub_field('customer') ?><br><i class="subheader"><?php the_sub_field('customer_organization') ?></i></p>
                         </div>
-                        <p class="testimonial-slide-author-info"><?php the_sub_field('customer') ?><br><i class="subheader"><?php the_sub_field('customer_organization') ?></i></p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-          <?php endwhile; ?>
+            <?php endwhile; ?>
 
-      </ul>
-    </div>
+        </ul>
+      </div>
   </div>
-</div>
 <!-- slider close -->
 
 <?php get_footer(); ?>

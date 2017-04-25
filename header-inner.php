@@ -53,7 +53,7 @@
            <div class="hero-smaller" style="background-image: url('<?php header_image(); ?>')">
          		<div class="inner-hero-smaller">
          			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-         			<h3 class="tagline"><?php bloginfo('description'); ?> </h3>
+         			<h3 class="tagline">THE BLOG <i class="fa fa-rss" aria-hidden="true"></i></h3>
          		</div>
          	</div>
          </div>

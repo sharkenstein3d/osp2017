@@ -10,7 +10,10 @@ function joints_theme_support() {
 	set_post_thumbnail_size(125, 125, true);
 
 	// Blog Image Size
-	add_image_size( 'blog-image', 420, 9999 ); //300 pixels wide (and unlimited height)
+	add_image_size( 'blog-image', 420, 9999 );
+
+	// Portfolio Image Size
+	add_image_size( 'portfolio', 800, 500 );
 
 	// Add RSS Support
 	add_theme_support( 'automatic-feed-links' );

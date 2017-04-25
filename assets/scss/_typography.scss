@@ -1,3 +1,5 @@
+// GENERAL
+
 $font__serif: 'Bitter', serif;
 $font__sans: 'Palanquin Dark', sans-serif;
 $font__main: 'Bitter', serif;
@@ -48,6 +50,8 @@ body {
   }
 }
 
+// SERVICES
+
 .services {
   color: $secondary-color;
   padding: $global-padding-double;
@@ -71,17 +75,72 @@ body {
 }
 
 .header-text-extra-space {
-  padding: 3rem 1rem 3rem 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   color: $dark-gray;
-  margin-bottom: 0;
 }
 
 .header-text-extra-space-white {
-  margin: 3rem 1rem 3rem 1rem;
+  margin: .5rem;
   color: $light-gray;
 }
 
+// PORTFOLIO
+
+.portfolio-header {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: $dark-gray;
+}
+
+// SIDEBAR
+
+#sidebar1 {
+
+  li {
+    text-align: center;
+    text-transform: uppercase;
+
+    a {
+      &:hover {
+        color: $anchor-color-hover;
+      }
+    }
+  }
+}
+
+.widgettitle {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 // BLOG
+
+.single-title {
+  color: $dark-gray;
+}
+
+.entry-content-single {
+  padding: .3em;
+
+  @include breakpoint(medium) {
+
+    padding: 1em;
+
+  }
+}
+.entry-content-single > p {
+  color: $black;
+}
+
+.entry-content-single > h1, h2, h3, h4, h5, h6 {
+  padding: $global-padding-double;
+}
+
+.entry-content {
+  padding: $global-padding;
+  margin: 2.5rem 0 2.5rem 0;
+}
 
 .byline {
   font-size: .8em;
@@ -156,4 +215,29 @@ body {
   color: $medium-gray;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+li.comment {
+  border-bottom: 3px dashed $primary-color;
+  margin-bottom: 2rem;
+}
+
+.commentlist {
+  margin: $global-margin;
+}
+
+p.comment-notes {
+  color: $medium-gray;
+  font-style: italic;
+}
+
+blockquote {
+font-style: italic;
+background-color: $light-gray;
+font-size: 1.2em;
+margin-top: 2rem;
+margin-bottom: 1rem;
+padding: .5rem 1rem;
+border-left: .25rem solid $secondary-color;
+display: block;
 }

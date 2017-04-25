@@ -5297,13 +5297,47 @@ body {
       font-size: 1.5rem; } }
 
 .header-text-extra-space {
-  padding: 3rem 1rem 3rem 1rem;
-  color: #626262;
-  margin-bottom: 0; }
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: #626262; }
 
 .header-text-extra-space-white {
-  margin: 3rem 1rem 3rem 1rem;
+  margin: .5rem;
   color: #F5F5F5; }
+
+.portfolio-header {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #626262; }
+
+#sidebar1 li {
+  text-align: center;
+  text-transform: uppercase; }
+  #sidebar1 li a:hover {
+    color: #008a9a; }
+
+.widgettitle {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.single-title {
+  color: #626262; }
+
+.entry-content-single {
+  padding: .3em; }
+  @media print, screen and (min-width: 40em) {
+    .entry-content-single {
+      padding: 1em; } }
+
+.entry-content-single > p {
+  color: #313131; }
+
+.entry-content-single > h1, h2, h3, h4, h5, h6 {
+  padding: 2rem; }
+
+.entry-content {
+  padding: 1rem;
+  margin: 2.5rem 0 2.5rem 0; }
 
 .byline {
   font-size: .8em; }
@@ -5362,9 +5396,26 @@ body {
   margin-top: 2em;
   margin-bottom: 2em; }
 
-.img-circle {
-  border-radius: 50%;
-  padding-bottom: 1rem; }
+li.comment {
+  border-bottom: 3px dashed #00acc1;
+  margin-bottom: 2rem; }
+
+.commentlist {
+  margin: 1rem; }
+
+p.comment-notes {
+  color: #c4c4c4;
+  font-style: italic; }
+
+blockquote {
+  font-style: italic;
+  background-color: #F5F5F5;
+  font-size: 1.2em;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  border-left: 0.25rem solid #00899A;
+  display: block; }
 
 .responsive-nav-social-mobile {
   background: #fefefe;
@@ -5584,12 +5635,9 @@ body {
 
 .simple-subscription-form {
   background: #626262;
-  color: #fefefe;
+  color: #F5F5F5;
   padding: 2rem;
   border-radius: 0; }
-  .simple-subscription-form .button {
-    margin-bottom: 0;
-    border-radius: 0 0 0 0; }
 
 .subscribe {
   width: 95%;
@@ -5600,6 +5648,44 @@ body {
   @media screen and (min-width: 60em) {
     .subscribe {
       max-width: 45%; } }
+
+.input-group {
+  height: 2.5rem;
+  font-size: 1em; }
+
+#portfolio-container {
+  background-color: #F5F5F5; }
+
+.portfolio {
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 2rem; }
+
+.portfolio div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: .5vw; }
+
+.portfolio div img {
+  width: 100%;
+  height: auto; }
+
+@media screen and (max-width: 400px) {
+  header div {
+    margin: 0; }
+  header {
+    padding: 0; } }
 
 .testimonial-container {
   background: #66b8c2;
@@ -5667,15 +5753,8 @@ body {
     .testimonial-slide-author-container .testimonial-slide-author-info {
       margin-left: 1rem; } }
 
-#sidebar1 li {
-  text-align: center;
-  text-transform: uppercase; }
-  #sidebar1 li a:hover {
-    color: #008a9a; }
-
-.widgettitle {
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
+.card:first-of-type {
+  margin-top: 2rem; }
 
 .card {
   margin-bottom: 2rem;
@@ -5686,25 +5765,6 @@ body {
   width: 100%;
   height: auto; }
 
-.single-title {
-  color: #626262; }
-
-.entry-content-single {
-  padding: .3em; }
-  @media print, screen and (min-width: 40em) {
-    .entry-content-single {
-      padding: 1em; } }
-
-.entry-content-single > p {
-  color: #313131; }
-
-.entry-content-single > h1, h2, h3, h4, h5, h6 {
-  padding: 2rem; }
-
-.entry-content {
-  padding: 1rem;
-  margin: 2.5rem 0 2.5rem 0; }
-
 .blog-divider-single {
   border: 20px solid #00acc1;
   margin: 2em 0 2em 0; }
@@ -5712,17 +5772,6 @@ body {
 @media screen and (min-width: 59em) {
   .featured-image {
     max-height: 315px; } }
-
-li.comment {
-  border-bottom: 3px dashed #00acc1;
-  margin-bottom: 2rem; }
-
-.commentlist {
-  margin: 1rem; }
-
-p.comment-notes {
-  color: #c4c4c4;
-  font-style: italic; }
 
 .comment-form {
   padding: 1rem; }
@@ -5736,16 +5785,6 @@ p.comment-notes {
 
 .pagination {
   text-align: center; }
-
-blockquote {
-  font-style: italic;
-  background-color: #F5F5F5;
-  font-size: 1.2em;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  padding: .5rem 1rem;
-  border-left: 0.25rem solid #00899A;
-  display: block; }
 
 .view-full-post {
   float: right; }
