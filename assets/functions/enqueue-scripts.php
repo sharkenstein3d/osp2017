@@ -14,11 +14,19 @@ function site_scripts() {
     // Adding scripts file in the footer
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/js/scripts.min.js', array( 'jquery' ), '', true );
 
+    // Adding scripts file in the footer
+    wp_enqueue_script( 'fancybox-js', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js', array( 'jquery' ), '', true );
+
     // Register main stylesheet
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
 
     // Add Google Fonts
     wp_enqueue_style( 'osp-fonts', 'https://fonts.googleapis.com/css?family=Bitter:400,400i,700|Palanquin+Dark:600,700' );
+
+    // FancyBox
+    wp_enqueue_style( 'fancybox-css', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css', array(), '', 'all' );
+
+
 
 
 

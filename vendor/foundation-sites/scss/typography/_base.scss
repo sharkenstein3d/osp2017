@@ -54,12 +54,12 @@ $header-margin-bottom: 0.5rem !default;
 /// @type Map
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 34),
+    'h2': ('font-size': 30),
+    'h3': ('font-size': 29),
+    'h4': ('font-size': 28),
+    'h5': ('font-size': 27),
+    'h6': ('font-size': 26),
   ),
   medium: (
     'h1': ('font-size': 48),
@@ -79,7 +79,7 @@ $header-styles: (
   @each $size, $headers in $header-sizes {
     $header-map: ();
     @each $header, $font-size in $headers {
-      $header-map: map-merge($header-map, ($header: ('font-size': $font-size)));  
+      $header-map: map-merge($header-map, ($header: ('font-size': $font-size)));
     }
     $header-styles: map-merge($header-styles, ($size: $header-map));
   }
@@ -479,7 +479,7 @@ $abbr-underline: 1px dotted $black !default;
   figure {
     margin: 0;
   }
-  
+
   // Code
   code {
     padding: $code-padding;

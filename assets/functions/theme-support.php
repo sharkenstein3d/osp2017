@@ -13,7 +13,7 @@ function joints_theme_support() {
 	add_image_size( 'blog-image', 420, 9999 );
 
 	// Portfolio Image Size
-	add_image_size( 'portfolio', 800, 500 );
+	add_image_size( 'portfolio', 800, 9999 );
 
 	// Add RSS Support
 	add_theme_support( 'automatic-feed-links' );

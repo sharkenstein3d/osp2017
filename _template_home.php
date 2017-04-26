@@ -14,8 +14,10 @@ Template Name: Template Home
 <?php $embroidery_desc = get_field('embroidery_description'); ?>
 <?php $embroidery_photo = get_field('embroidery_photo'); ?>
 
-
 <h2 id="services" class="header-text-extra-space">Services We Provide</h2>
+<p class="section-description-gray">
+  Chiggity check yourself before you wreck yourself, because shotgun bullets are bad for your health.
+</p>
 <div class="row">
   <div class="services-content-section">
     <div class="services-content-section-img">
@@ -57,7 +59,7 @@ Template Name: Template Home
   <div class="subscribe">
     <form>
       <h4>Subscribe to Our Mailing List</h4>
-      <p>You know you want to!</p>
+      <h5>You know you want to!</h5>
       <div class="input-group" data-equalizer>
         <span class="input-group-label">
           <i class="fa fa-envelope"></i>
@@ -71,7 +73,10 @@ Template Name: Template Home
 
 
 <div id="portfolio-container">
-  <h2 class="portfolio-header">Portfolio</h2>
+  <h2 class="header-text-extra-space">Portfolio</h2>
+  <p class="section-description-white">
+   Photos of other peoples' shit on which we printed shit using ink and shit. We're pretty proud of this shit right here, y'all.
+  </p>
   <div class="row">
 
 
@@ -82,7 +87,7 @@ $images = get_field('portfolio');
 
 if( $images ): ?>
       <?php foreach( $images as $image ): ?>
-  <div><img src="<?php echo $image['sizes']['portfolio']; ?>" alt="<?php echo $image['alt']; ?>" /></div>
+  <div><a data-fancybox="gallery" href="<?php echo $image['url']; ?>"><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" /></a></div>
 <?php endforeach; ?>
 <?php endif; ?>
 
@@ -92,6 +97,7 @@ if( $images ): ?>
 
   <div class="testimonial-container">
     <h2 class="header-text-extra-space-white">Customer Testimonials</h2>
+    <div class="row">
       <div class="orbit testimonial-slider-container" role="region" aria-label="testimonial-slider" data-orbit>
         <ul class="orbit-container">
           <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
@@ -128,6 +134,8 @@ if( $images ): ?>
 
         </ul>
       </div>
+    </div>
+
   </div>
 <!-- slider close -->
 
