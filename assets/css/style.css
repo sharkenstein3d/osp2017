@@ -4889,6 +4889,24 @@ blockquote {
 .view-full-post {
   float: right; }
 
+#sidebar1 {
+  margin-bottom: 2rem; }
+
+.order-intro {
+  padding: 2rem;
+  font-weight: bold;
+  color: #626262;
+  margin-bottom: 0; }
+
+#order-form {
+  padding: 2rem; }
+
+.customer-info {
+  background-color: #F5F5F5;
+  padding: 1rem;
+  border: 1px solid #00acc1;
+  margin-bottom: 1rem; }
+
 .footer {
   text-align: center;
   color: #fefefe;

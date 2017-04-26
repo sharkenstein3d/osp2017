@@ -139,4 +139,5 @@ if( $images ): ?>
   </div>
 <!-- slider close -->
 
+<?php get_template_part( 'contact' ); ?>
 <?php get_footer(); ?>

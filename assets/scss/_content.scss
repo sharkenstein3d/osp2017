@@ -231,3 +231,28 @@ $subscription-form-padding: rem-calc(32);
 .view-full-post {
   float: right;
 }
+
+// SIDEBAR
+
+#sidebar1 {
+  margin-bottom: 2rem;
+}
+// ORDER
+
+.order-intro {
+  padding: $global-padding-double;
+  font-weight: bold;
+  color: $dark-gray;
+  margin-bottom: 0;
+}
+
+#order-form {
+  padding: $global-padding-double;
+}
+
+.customer-info {
+  background-color: $light-gray;
+  padding: $global-padding;
+  border: 1px solid $primary-color;
+  margin-bottom: 1rem; 
+}
