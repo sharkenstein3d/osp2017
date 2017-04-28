@@ -16,7 +16,7 @@ Template Name: Template Home
 
 <h2 id="services" class="header-text-extra-space">Services We Provide</h2>
 <p class="section-description-gray">
-  Chiggity check yourself before you wreck yourself, because shotgun bullets are bad for your health.
+  If any of this sounds good to you, give us a call and shit. We'll work out some shit and get some shit printed for you and shit We love you.
 </p>
 <div class="row">
   <div class="services-content-section">
@@ -96,6 +96,7 @@ if( $images ): ?>
 </div>
 
   <div class="testimonial-container">
+
     <h2 class="header-text-extra-space-white">Customer Testimonials</h2>
     <div class="row">
       <div class="orbit testimonial-slider-container" role="region" aria-label="testimonial-slider" data-orbit>
@@ -117,12 +118,12 @@ if( $images ): ?>
                         <img src="<?php the_sub_field('customer_image'); ?>">
                       </div>
                       <div class="small-12 medium-8 column testimonial-slide-text">
-                        <p class="testimonial-slide-quotation"><?php the_sub_field('customer_testimonial') ?></p>
+                        <p class="testimonial-slide-quotation"><?php the_sub_field('customer_testimonial'); ?></p>
                         <div class="testimonial-slide-author-container">
                           <div class="small-profile-pic show-for-small-only">
                             <img src="<?php the_sub_field('customer_image'); ?>">
                           </div>
-                          <p class="testimonial-slide-author-info"><?php the_sub_field('customer') ?><br><i class="subheader"><?php the_sub_field('customer_organization') ?></i></p>
+                          <p class="testimonial-slide-author-info"><?php the_sub_field('customer'); ?><br><i class="subheader"><?php the_sub_field('customer_organization') ?></i></p>
                         </div>
                       </div>
                     </div>
@@ -137,7 +138,9 @@ if( $images ): ?>
     </div>
 
   </div>
+
 <!-- slider close -->
 
 <?php get_template_part( 'contact' ); ?>
+<?php get_template_part( 'instagram' ); ?>
 <?php get_footer(); ?>

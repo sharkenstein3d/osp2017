@@ -3913,7 +3913,7 @@ a.thumbnail {
 .has-tip {
   position: relative;
   display: inline-block;
-  border-bottom: dotted 1px #626262;
+  border-bottom: none;
   font-weight: bold;
   cursor: help; }
 
@@ -4892,11 +4892,60 @@ blockquote {
 #sidebar1 {
   margin-bottom: 2rem; }
 
+.filter-simple .button-group {
+  justify-content: center; }
+
+.filter-simple .filter-simple-button.hollow.is-active, .filter-simple .filter-simple-button.hollow:focus, .filter-simple .filter-simple-button.hollow:active {
+  background-color: #00acc1;
+  color: #fefefe; }
+
+.button-group.round :first-child {
+  border-radius: 5000px 0 0 5000px; }
+
+.button-group.round :last-child {
+  border-radius: 0 5000px 5000px 0; }
+
+.column-block {
+  margin-bottom: 30px; }
+
+.garment-tabs {
+  padding: 1rem; }
+
+.garment-accordion-title {
+  padding: 0;
+  margin: 0; }
+
 .order-intro {
   padding: 2rem;
   font-weight: bold;
   color: #626262;
   margin-bottom: 0; }
+
+.garment-brand {
+  padding: .5rem;
+  margin: 0;
+  background-color: #00acc1; }
+
+.garment-id {
+  background-color: #626262;
+  color: #F5F5F5;
+  padding: .5rem;
+  margin: 0; }
+
+.garment-description {
+  color: #626262;
+  margin-top: 1rem; }
+
+.contact-method {
+  font-weight: bold; }
+
+.colors {
+  background-color: #fefefe; }
+
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 3px; }
 
 #order-form {
   padding: 2rem; }
@@ -4906,6 +4955,22 @@ blockquote {
   padding: 1rem;
   border: 1px solid #00acc1;
   margin-bottom: 1rem; }
+
+.order-info {
+  background-color: #F5F5F5;
+  padding: 1rem;
+  border: 1px solid #00acc1;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.checkbox {
+  display: block; }
+  @media print, screen and (min-width: 40em) {
+    .checkbox {
+      display: inline-block; } }
+
+legend.finishing-options {
+  background-color: #F5F5F5; }
 
 .footer {
   text-align: center;
@@ -4992,6 +5057,10 @@ blockquote {
     #map {
       width: 100%;
       height: 21em; } }
+
+.instagram-feed {
+  padding: 1rem;
+  margin-bottom: 2rem; }
 
 .footer-copyright {
   font-size: .8em; }

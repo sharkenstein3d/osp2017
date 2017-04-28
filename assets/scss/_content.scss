@@ -239,11 +239,80 @@ $subscription-form-padding: rem-calc(32);
 }
 // ORDER
 
+.filter-simple {
+  .button-group {
+     justify-content: center; // center the button group
+  }
+
+  .filter-simple-button.hollow {
+    &.is-active,
+    &:focus,
+    &:active {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+}
+
+// optional styles to round the button group edges
+.button-group.round {
+  :first-child {
+    border-radius: 5000px 0 0 5000px;
+  }
+
+  :last-child {
+    border-radius: 0 5000px 5000px 0;
+  }
+}
+
+// class that spaces blocks vertically - will be built into Foundation 6.4
+.column-block {
+  margin-bottom: 30px;
+}
+
+.garment-tabs {
+  padding: $global-padding;
+}
+
+.garment-accordion-title {
+  padding: 0;
+  margin: 0;
+}
 .order-intro {
   padding: $global-padding-double;
   font-weight: bold;
   color: $dark-gray;
   margin-bottom: 0;
+}
+
+.garment-brand {
+  padding: .5rem;
+  margin: 0;
+  background-color: $primary-color;
+}
+
+.garment-id {
+  background-color: $dark-gray;
+  color: $light-gray;
+  padding: .5rem;
+  margin: 0;
+}
+
+.garment-description {
+  color: $dark-gray;
+  margin-top: 1rem;
+}
+.contact-method {
+  font-weight: bold;
+}
+.colors {
+  background-color: $white;
+}
+
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 3px;
 }
 
 #order-form {
@@ -254,5 +323,26 @@ $subscription-form-padding: rem-calc(32);
   background-color: $light-gray;
   padding: $global-padding;
   border: 1px solid $primary-color;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
+}
+
+
+.order-info {
+  background-color: $light-gray;
+  padding: $global-padding;
+  border: 1px solid $primary-color;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox {
+  display: block;
+
+  @include breakpoint(medium) {
+    display: inline-block;
+
+  }
+}
+legend.finishing-options {
+  background-color: $light-gray;
 }
