@@ -77,7 +77,7 @@ Template Name: Order
 						while ( have_rows('blank') ): the_row(); ?>
 
 
-							<div class="small-6 medium-3 columns">
+							<div class="small-12 medium-4 columns">
 								<div class="card">
 								  <div class="card-divider">
 								    <h4 class="garment-brand"><?php the_sub_field('brand'); ?></h4>

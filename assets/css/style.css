@@ -4972,6 +4972,9 @@ blockquote {
 legend.finishing-options {
   background-color: #F5F5F5; }
 
+.card {
+  width: 100%; }
+
 .footer {
   text-align: center;
   color: #fefefe;
