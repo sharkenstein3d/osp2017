@@ -15,19 +15,19 @@ Template Name: Order
 
 			<div class="small-12 columns">
 	      <label>First Name
-	        <input type="text" placeholder="Dumb">
+	        <input type="text">
 	      </label>
 	    </div>
 
 	    <div class="small-12 columns">
 	      <label>Last Name
-	        <input type="text" placeholder="Ass">
+	        <input type="text">
 	      </label>
 	    </div>
 
 			<div class="small-12 columns">
 	      <label>Company Name
-	        <input type="text" placeholder="Dumbasses, Inc.">
+	        <input type="text">
 	      </label>
 	    </div>
 
@@ -39,7 +39,7 @@ Template Name: Order
 
 			<div class="small-12 columns">
 				<label>Email address
-					<input type="email" placeholder="you@dumbass.org" />
+					<input type="email" placeholder="ex: you@company.com" />
 				</label>
 			</div>
 
@@ -54,9 +54,34 @@ Template Name: Order
 			<hr />
 			<label>
 			  Notes
-			  <textarea placeholder="I want to write 'home' inside of the shape of the state in which I live. I'm pretty sure this is an orginal idea and no one has done this before. I want like 100 shirts? " rows="8"></textarea>
+			  <textarea rows="8"></textarea>
 			</label>
 
+		</div>
+
+		<div class="small-12 medium-5 columns customer-info">
+			<fieldset class="fieldset">
+		    <legend class="finishing-options">Finishing Options</legend>
+		    <div class="checkbox">
+					<input id="folding" type="checkbox"><label for="folding">Folding</label>
+				</div>
+		    <div class="checkbox">
+					<input id="neck-labels" type="checkbox"><label for="neck-labels">Neck Labels</label>
+				</div>
+		    <div class="checkbox">
+					<input id="hang-tags" type="checkbox"><label for="hang-tags">Hang Tags</label>
+				</div>
+				<div class="checkbox">
+					<input id="polybags" type="checkbox"><label for="polybags">Polybags</label>
+				</div>
+		  </fieldset>
+			<label for="exampleFileUpload" class="button">Upload File</label>
+				<input type="file" id="exampleFileUpload" class="show-for-sr">
+
+		</div>
+
+		<div class="small-12 medium-5 columns customer-info">
+		<h3>tacos</h3>
 		</div>
 
 		<div class="small-12 medium-11 columns order-info">
@@ -69,7 +94,7 @@ Template Name: Order
 
 			  <li class="accordion-item" data-accordion-item>
 			    <!-- Accordion tab title -->
-			   <a href="#" class="accordion-title"><h6 class="garment-accordion-title">Adult T-Shirts</h6></a>
+			   <a href="#" class="accordion-title"><h6 class="garment-accordion-title">Adult Unisex T-Shirts</h6></a>
 
 					<div class="accordion-content" data-tab-content>
 						<div class="row">
@@ -77,14 +102,14 @@ Template Name: Order
 						while ( have_rows('blank') ): the_row(); ?>
 
 
-							<div class="small-12 medium-4 columns">
+							<div class="small-12 medium-6 columns">
 								<div class="card">
 								  <div class="card-divider">
 								    <h4 class="garment-brand"><?php the_sub_field('brand'); ?></h4>
 										<h5 class="garment-id"><?php the_sub_field('product_id'); ?></h5>
 										<p class="garment-description"><?php the_sub_field('product_name'); ?></p>
 								  </div>
-								  <img src="<?php the_sub_field('product_image'); ?>">
+								  <img class="order-product-image" src="<?php the_sub_field('product_image'); ?>">
 								  <div class="card-section colors">
 										<p>
 											Available Colors
@@ -114,13 +139,13 @@ Template Name: Order
 			   <a href="#" class="accordion-title"><h6 class="garment-accordion-title">Yooph T-Shirts</h6></a>
 
 					<div class="accordion-content" data-tab-content>
-						<div class="row">
+						<div class="row" data-equalizer>
 						<?php if ( have_rows('blank') );
 						while ( have_rows('blank') ): the_row(); ?>
 
-
 							<div class="small-12 medium-6 columns">
-								<div class="card">
+
+								<div class="card" data-equalizer-watch>
 								  <div class="card-divider">
 								    <h4 class="garment-brand"><?php the_sub_field('brand'); ?></h4>
 										<h5 class="garment-id"><?php the_sub_field('product_id'); ?></h5>
@@ -142,32 +167,9 @@ Template Name: Order
 							</div>
 									<?php endwhile; ?>
 						</div>
-
-
 					</div>
-
 				</li>
-
 			</ul>
-
-
-
-
-			<fieldset class="fieldset">
-		    <legend class="finishing-options">Finishing Options</legend>
-		    <div class="checkbox">
-					<input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-				</div>
-		    <div class="checkbox">
-					<input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-				</div>
-		    <div class="checkbox">
-					<input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
-				</div>
-		  </fieldset>
-			<label for="exampleFileUpload" class="button">Upload File</label>
-				<input type="file" id="exampleFileUpload" class="show-for-sr">
-
 
   	</div>
 	</form>

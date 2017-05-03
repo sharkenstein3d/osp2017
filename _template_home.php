@@ -5,6 +5,7 @@ Template Name: Template Home
 ?>
 
 <?php get_header(); ?>
+<?php $services_header_desc = get_field('services_header_description'); ?>
 <?php $printing_desc = get_field('screen_printing_description'); ?>
 <?php $printing_photo = get_field('screen_printing_photo'); ?>
 <?php $finishing_desc = get_field('finishing_description'); ?>
@@ -13,10 +14,11 @@ Template Name: Template Home
 <?php $graphic_design_photo = get_field('graphic_design_photo'); ?>
 <?php $embroidery_desc = get_field('embroidery_description'); ?>
 <?php $embroidery_photo = get_field('embroidery_photo'); ?>
+<?php $portfolio_header_desc = get_field('portfolio_header_description'); ?>
 
 <h2 id="services" class="header-text-extra-space">Services We Provide</h2>
 <p class="section-description-gray">
-  If any of this sounds good to you, give us a call and shit. We'll work out some shit and get some shit printed for you and shit We love you.
+  <?php echo $services_header_desc; ?>
 </p>
 <div class="row">
   <div class="services-content-section">
@@ -75,7 +77,7 @@ Template Name: Template Home
 <div id="portfolio-container">
   <h2 class="header-text-extra-space">Portfolio</h2>
   <p class="section-description-white">
-   Photos of other peoples' shit on which we printed shit using ink and shit. We're pretty proud of this shit right here, y'all.
+   <?php echo $portfolio_header_desc; ?>
   </p>
   <div class="row">
 

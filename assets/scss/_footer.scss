@@ -14,8 +14,9 @@ $contact-us-section-padding: 2rem;
 $contact-us-section-bg: $light-gray;
 
 .contact-us-section {
-  padding: $contact-us-section-padding;
+  padding-bottom: $global-padding;
   background: $contact-us-section-bg;
+
 
   @media screen and (max-width: 320px) {
     li {
@@ -45,14 +46,7 @@ $contact-us-section-bg: $light-gray;
     }
   }
 
-  .contact-us-header {
-    color: $dark-gray;
-    margin-bottom: $contact-us-section-padding;
 
-    @media screen and #{breakpoint(medium)} and #{breakpoint(large down)} {
-      font-size: 32px;
-    }
-  }
 
   .responsive-embed {
     margin-bottom: 0;
@@ -90,34 +84,12 @@ $contact-us-section-bg: $light-gray;
 
   li {
     a {
+
       color: $black;
     }
   }
-
-  li::before {
-    margin-right: 2rem;
-    font-size: 2rem;
-    vertical-align: middle;
-    color: $dark-gray;
-    font-family: 'FontAwesome';
-  }
-
-  // generates icons - change fontawesome content codes below to change icons
-  .address::before {
-    content: '\f041';
-    margin-left: 0.4rem;
-    margin-right: 2.3rem;
-
-  }
-
-  .email::before {
-    content: '\f003';
-  }
-
-  .phone::before {
-    content: '\f098';
-  }
 }
+
 
 #map {
   width: 15em;
@@ -130,8 +102,6 @@ $contact-us-section-bg: $light-gray;
     width: 100%;
     height: 21em;
   }
-
-
 }
 
 .instagram-feed {
@@ -144,5 +114,101 @@ $contact-us-section-bg: $light-gray;
 
   @media screen and (min-width: 40em){
     font-size: 1em;
+  }
+}
+
+$contact-section-three-up-width: 900px;
+
+.contact-section-three-up {
+  text-align: center;
+  padding: 2rem 0;
+
+  .row {
+    max-width: $contact-section-three-up-width;
+  }
+
+  .columns {
+    margin-bottom: 1rem;
+
+    @include breakpoint(large) {
+      padding: $global-padding-double;
+      margin-bottom: 0;
+      border-right: 2px dashed $medium-gray;
+      &:last-child{
+        border: 0;
+    }
+    }
+  }
+
+
+  .fa {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: $primary-color;
+  }
+}
+
+.contact-section-three-up-headline {
+  margin-bottom: 2rem;
+}
+
+.contact-section-three-up-title {
+  padding: 0;
+  color: $medium-gray;
+}
+
+.contact-list {
+  margin: 0;
+}
+.contact-info {
+  list-style: none;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+
+
+  @include breakpoint(medium) {
+    width: 50%;
+    font-size: 1.1rem;
+  }
+
+  @include breakpoint(large) {
+    width: 100%;
+    border: none;
+
+  }
+}
+
+.contact-info-2nd {
+  list-style: none;
+  padding-bottom: 2rem;
+  border-bottom: 2px dashed $medium-gray;
+  margin-bottom: 2rem;
+
+  @include breakpoint(medium) {
+    padding-bottom: $global-padding-double;
+  }
+
+  @include breakpoint(large) {
+    border: none;
+
+  }
+}
+
+.contact-info-detail {
+  list-style: none;
+  padding-bottom: 2rem;
+  font-style: italic;
+  color: $primary-color;
+  border-bottom: 2px dashed $medium-gray;
+  margin-bottom: 2rem;
+
+  @include breakpoint(medium) {
+    padding-bottom: $global-padding-double;
+  }
+
+  @include breakpoint(large) {
+    border: none;
+
   }
 }

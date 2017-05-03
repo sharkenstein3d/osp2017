@@ -54,9 +54,9 @@
          		<div class="inner-hero">
          			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
          			<h3 class="tagline"><?php bloginfo('description'); ?> </h3>
-         			<a href="order.html" class="show-for-small-only button small">Start Your Order</a>
-              <a href="order.html" class="show-for-medium-only button">Start Your Order</a>
-              <a href="order.html" class="show-for-large button large">Start Your Order</a>
+         			<a href="/order" class="show-for-small-only button small">Start Your Order</a>
+              <a href="/order" class="show-for-medium-only button">Start Your Order</a>
+              <a href="/order" class="show-for-large button large">Start Your Order</a>
          		</div>
          	</div>
          </div>
