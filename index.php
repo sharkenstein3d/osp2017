@@ -1,7 +1,7 @@
 <?php get_template_part( 'header-inner' ); ?>
 
 	<div id="content">
-		<div class="row align-center">
+		<div class="blog-body row align-center">
 			<div class="small-12 medium-10 large-6 columns">
 
 			<?php

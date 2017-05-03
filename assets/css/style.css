@@ -4853,6 +4853,9 @@ blockquote {
     .testimonial-slide-author-container .testimonial-slide-author-info {
       margin-left: 1rem; } }
 
+.blog-body {
+  margin-top: 3rem; }
+
 .card:first-of-type {
   margin-top: 2rem; }
 
