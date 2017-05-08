@@ -243,6 +243,25 @@ $subscription-form-padding: rem-calc(32);
 }
 // ORDER
 
+.iphorm_1_42-element-wrap {
+  background-color: $light-gray;
+  border: 2px dashed $primary-color;
+}
+
+.iphorm_1_42-input-wrap {
+  padding: $global-padding;
+}
+
+.iphorm_1_42-outer-label {
+  margin: $global-margin-double;
+  font-size: 1.5em;
+}
+
+.iphorm-element-select.iphorm_1_42 {
+  margin-left: 30em;
+  width: 300px;
+}
+
 .order-product-image {
   width: 100%;
   height: auto;

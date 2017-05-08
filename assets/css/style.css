@@ -4895,6 +4895,21 @@ blockquote {
 #sidebar1 {
   margin-bottom: 2rem; }
 
+.iphorm_1_42-element-wrap {
+  background-color: #F5F5F5;
+  border: 2px dashed #00acc1; }
+
+.iphorm_1_42-input-wrap {
+  padding: 1rem; }
+
+.iphorm_1_42-outer-label {
+  margin: 2rem;
+  font-size: 1.5em; }
+
+.iphorm-element-select.iphorm_1_42 {
+  margin-left: 30em;
+  width: 300px; }
+
 .order-product-image {
   width: 100%;
   height: auto; }

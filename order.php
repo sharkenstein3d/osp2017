@@ -11,12 +11,15 @@ Template Name: Order
 
 <form>
   <div id="order-form" class="row align-spaced">
+
 		<div class="small-12 medium-5 columns customer-info">
+			<?php if (function_exists('iphorm')) echo iphorm(1); ?>
 
 			<div class="small-12 columns">
 	      <label>First Name
 	        <input type="text">
 	      </label>
+					<label>You got another design bitch?</label><?php echo ('second_design_toggle'); ?>
 	    </div>
 
 	    <div class="small-12 columns">
@@ -53,9 +56,11 @@ Template Name: Order
 		  </fieldset>
 			<hr />
 			<label>
-			  Notes
+			  Tell Us About Your Order
 			  <textarea rows="8"></textarea>
 			</label>
+			<label for="exampleFileUpload" class="button">Upload File</label>
+				<input type="file" id="exampleFileUpload" class="show-for-sr">
 
 		</div>
 
@@ -75,9 +80,6 @@ Template Name: Order
 					<input id="polybags" type="checkbox"><label for="polybags">Polybags</label>
 				</div>
 		  </fieldset>
-			<label for="exampleFileUpload" class="button">Upload File</label>
-				<input type="file" id="exampleFileUpload" class="show-for-sr">
-
 		</div>
 
 		<div class="small-12 medium-5 columns customer-info">
