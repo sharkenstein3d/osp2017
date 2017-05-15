@@ -15,6 +15,3 @@ Template Name: Order2
 
 
 <?php get_footer(); ?>
-
-<!-- <img src="http://www.osp.dev/wp-content/uploads/2017/04/Next_Level_6010_Model_Shot_Med.jpg" />
-<p class="garment-desc">Next Level - Triblend Crew - 6010</p> -->

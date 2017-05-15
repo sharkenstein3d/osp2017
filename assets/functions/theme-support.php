@@ -12,6 +12,9 @@ function joints_theme_support() {
 	// Blog Image Size
 	add_image_size( 'blog-image', 420, 9999 );
 
+	// Blog Image Single Size
+	add_image_size( 'blog-image-single', 600, 9999 );
+
 	// Portfolio Image Size
 	add_image_size( 'portfolio', 800, 9999 );
 

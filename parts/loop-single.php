@@ -5,14 +5,13 @@
 		<?php get_template_part( 'parts/content', 'byline' ); ?>
     </header> <!-- end article header -->
 
-				<?php the_post_thumbnail('large'); ?>
-
 		<section class="entry-content-single" itemprop="articleBody">
 
 			<?php the_content(); ?>
+			<hr class="blog-divider-single" />
+			<?php the_post_thumbnail('large'); ?>
+			<hr class="blog-divider-single" />
 
-	</section> <!-- end article section -->
+		</section> <!-- end article section -->
 
 </article> <!-- end article -->
-
-	<hr class="blog-divider-single" />

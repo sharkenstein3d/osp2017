@@ -17,7 +17,7 @@
 		    <?php endif; ?>
 
 		</div> <!-- end #main -->
-		<div class="small-10 columns">
+		<div class="small-10 medium-7 columns">
 			<?php comments_template(); ?>
 		</div>
 		<div id="sidebar1" class="small-10 large-6 columns">

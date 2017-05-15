@@ -212,3 +212,10 @@ $contact-section-three-up-width: 900px;
 
   }
 }
+
+.login-link {
+  color: $medium-gray;
+    &:hover {
+      color: $light-gray;
+    }
+}

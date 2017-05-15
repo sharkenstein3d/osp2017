@@ -4688,7 +4688,7 @@ blockquote {
 
 .hero-smaller {
   background: url("<?php header_image(); ?>");
-  height: 60vh;
+  height: 55vh;
   color: white;
   background-size: cover;
   background-position: center;
@@ -4891,6 +4891,9 @@ blockquote {
 
 .view-full-post {
   float: right; }
+
+.archive-title {
+  margin-top: 2rem; }
 
 #sidebar1 {
   margin-bottom: 2rem; }
@@ -5125,6 +5128,11 @@ legend.finishing-options {
   @media print, screen and (min-width: 59.375em) {
     .contact-info-detail {
       border: none; } }
+
+.login-link {
+  color: #c4c4c4; }
+  .login-link:hover {
+    color: #F5F5F5; }
 
 /******************************************************************
 
