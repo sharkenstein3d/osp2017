@@ -1,4 +1,6 @@
-<section id="contact" class="contact-us-section">
+
+<span id="contact">&nbsp;</span>
+<section class="contact-us-section">
   <section class="contact-section-three-up">
   <h2 class="header-text-extra-space">Get in touch</h2>
   <div class="row large-unstack">

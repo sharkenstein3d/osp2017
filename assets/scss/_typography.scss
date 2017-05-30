@@ -84,15 +84,33 @@ body {
   background-color: $primary-color;
   color: $white;
   padding: $global-padding;
+
+  @include breakpoint(medium) {
+    padding: .25em;
+
+  }
 }
 
 .services-desc {
   margin-top: 2rem;
   color: $black;
   font-size: 1rem;
-    @media screen and (min-width: 50em) {
-      font-size: 1.5rem;
-    }
+
+  @include breakpoint(medium) {
+    margin-top: 1rem;
+  }
+
+  @include breakpoint(large) {
+    margin-top: 1.3rem;
+  }
+
+  @include breakpoint(xlarge) {
+    padding: 1.5rem;
+  }
+
+  @include breakpoint(xxlarge) {
+    padding: 3rem;
+  }
 }
 
 .header-text-extra-space {

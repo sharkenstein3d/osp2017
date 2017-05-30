@@ -1,4 +1,43 @@
+#services {
+  padding-top: 50px;
+  margin-top: -50px;
+  width: 1px;
+  display: hidden;
+}
+
+#portfolio {
+  padding-top: 50px;
+  margin-top: -50px;
+  width: 1px;
+  display: hidden;
+}
+
+#contact {
+  padding-top: 50px;
+  margin-top: -50px;
+  width: 1px;
+  display: hidden;
+}
+
 // SERVICES
+
+.services-desc-header {
+  font-size: 1.5em;
+
+  @include breakpoint(large) {
+    font-size: 2em;
+  }
+}
+
+.services-desc {
+  @include breakpoint(medium) {
+    font-size: 1em;
+  }
+
+  @include breakpoint(large) {
+    font-size: 1.5em;
+  }
+}
 
 .services-content-section {
   display: flex;
@@ -36,8 +75,25 @@
   }
 }
 
+.section-description-gray {
 
+  box-shadow: 6px 6px 16px #D3D3D3;
 
+  @include breakpoint(large) {
+    font-size: 1.25em;
+
+  }
+}
+
+.section-description-white {
+
+  box-shadow: 6px 6px 16px #D3D3D3;
+
+  @include breakpoint(large) {
+    font-size: 1.25em;
+
+  }
+}
 // EMAIL SIGNUP
 
 $subscription-form-color: $light-gray;

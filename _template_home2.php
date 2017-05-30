@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Template Home
+Template Name: Template Home 2
 */
 ?>
 
@@ -16,12 +16,19 @@ Template Name: Template Home
 <?php $embroidery_photo = get_field('embroidery_photo'); ?>
 <?php $portfolio_header_desc = get_field('portfolio_header_description'); ?>
 
-<span id="services">&nbsp;</span>
-<h2 class="header-text-extra-space">Services We Provide</h2>
+<div id="fullpage">
+    <div class="section">suck</div>
+    <div class="section">on</div>
+    <div class="section">my</div>
+    <div class="section">code</div>
+</div>
+
+<h2 id="services" class="header-text-extra-space">Services We Provide</h2>
 <p class="section-description-gray">
   <?php echo $services_header_desc; ?>
 </p>
-<div class="row expanded">
+
+<div class="row">
   <div class="services-content-section">
     <div class="services-content-section-img">
       <img src="<?php echo $printing_photo; ?>" alt="" />
@@ -62,6 +69,7 @@ Template Name: Template Home
   <div class="subscribe">
     <form>
       <h4>Subscribe to Our Mailing List</h4>
+      <h5>You know you want to!</h5>
       <div class="input-group" data-equalizer>
         <span class="input-group-label">
           <i class="fa fa-envelope"></i>
@@ -74,7 +82,6 @@ Template Name: Template Home
 </div>
 
 
-<span id="portfolio">&nbsp;</span>
 <div id="portfolio-container">
   <h2 class="header-text-extra-space">Portfolio</h2>
   <p class="section-description-white">
