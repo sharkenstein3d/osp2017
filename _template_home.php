@@ -73,9 +73,8 @@ Template Name: Template Home
   </div>
 </div>
 
-
-<span id="portfolio">&nbsp;</span>
 <div id="portfolio-container">
+  <span id="portfolio">&nbsp;</span>
   <h2 class="header-text-extra-space">Portfolio</h2>
   <p class="section-description-white">
    <?php echo $portfolio_header_desc; ?>
