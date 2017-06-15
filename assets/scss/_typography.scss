@@ -57,6 +57,7 @@ body {
   font-size: 1rem;
   color: $dark-gray;
   padding: 2rem;
+  border: 2px solid $primary-color;
   background-color: $light-gray;
   width: 80%;
 }
@@ -147,6 +148,28 @@ p.testimonial-slide-quotation {
 .widgettitle {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+//ORDER
+
+.order-form {
+  font-weight: 800;
+}
+
+.order-sections  {
+  color: $secondary-color;
+  padding: $global-padding-double;
+  width: 100%;
+}
+
+.design-sections {
+  color: $primary-color;
+  width: 100%;
+}
+
+.design-sections-inner {
+  text-align: left;
+  color: dimgray;
 }
 
 // BLOG

@@ -247,107 +247,136 @@ $subscription-form-padding: rem-calc(32);
 }
 // ORDER
 
-.iphorm_1_42-element-wrap {
-  background-color: $light-gray;
-  border: 2px dashed $primary-color;
-}
-
-.iphorm_1_42-input-wrap {
-  padding: $global-padding;
-}
-
-.iphorm_1_42-outer-label {
-  margin: $global-margin-double;
-  font-size: 1.5em;
-}
-
-.iphorm-element-select.iphorm_1_42 {
-  margin-left: 30em;
-  width: 300px;
-}
-
-.order-product-image {
-  width: 100%;
-  height: auto;
-}
-
-.garment-tabs {
-  padding: $global-padding;
-}
-
-.garment-accordion-title {
-  padding: 0;
-  margin: 0;
-}
-.order-intro {
-  padding: $global-padding-double;
-  font-weight: bold;
-  color: $dark-gray;
-  margin-bottom: 0;
-}
-
-.garment-brand {
-  padding: .5rem;
-  margin: 0;
-  background-color: $primary-color;
-}
-
-.garment-id {
-  background-color: $dark-gray;
-  color: $light-gray;
-  padding: .5rem;
-  margin: 0;
-}
-
-.garment-description {
-  color: $dark-gray;
-  margin-top: 1rem;
-}
-.contact-method {
-  font-weight: bold;
-}
-.colors {
-  background-color: $white;
-}
-
-.color-swatch {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 3px;
-}
-
-#order-form {
+.customer {
+  background-color: #b2e6ec;
+  margin: 1rem;
   padding: $global-padding-double;
 }
 
-.customer-info {
-  background-color: $light-gray;
-  padding: $global-padding;
-  border: 1px solid $primary-color;
-  margin-bottom: 1rem;
+.customer:last-of-type {
+  margin-bottom: 4rem;
 }
-
 
 .order-info {
-  background-color: $light-gray;
-  padding: $global-padding;
-  border: 1px solid $primary-color;
+  background-color: #e5f6f8;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  padding: $global-padding-double;
 }
 
-.checkbox {
-  display: block;
-
-  @include breakpoint(medium) {
-    display: inline-block;
-
-  }
-}
-legend.finishing-options {
-  background-color: $light-gray;
+.blanks {
+  padding: $global-padding;
 }
 
-.card {
-  width: 100%;
+.designs {
+  margin-top: 1rem;
 }
+
+.notes {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+//.iphorm_1_42-element-wrap {
+//  background-color: $light-gray;
+//  border: 2px dashed $primary-color;
+//}
+//
+//.iphorm_1_42-input-wrap {
+//  padding: $global-padding;
+//}
+//
+//.iphorm_1_42-outer-label {
+//  margin: $global-margin-double;
+//  font-size: 1.5em;
+//}
+//
+//.iphorm-element-select.iphorm_1_42 {
+//  margin-left: 30em;
+//  width: 300px;
+//}
+//
+//.order-product-image {
+//  width: 100%;
+//  height: auto;
+//}
+//
+//.garment-tabs {
+//  padding: $global-padding;
+//}
+//
+//.garment-accordion-title {
+//  padding: 0;
+//  margin: 0;
+//}
+//.order-intro {
+//  padding: $global-padding-double;
+//  font-weight: bold;
+//  color: $dark-gray;
+//  margin-bottom: 0;
+//}
+//
+//.garment-brand {
+//  padding: .5rem;
+//  margin: 0;
+//  background-color: $primary-color;
+//}
+//
+//.garment-id {
+//  background-color: $dark-gray;
+//  color: $light-gray;
+//  padding: .5rem;
+//  margin: 0;
+//}
+//
+//.garment-description {
+//  color: $dark-gray;
+//  margin-top: 1rem;
+//}
+//.contact-method {
+//  font-weight: bold;
+//}
+//.colors {
+//  background-color: $white;
+//}
+//
+//.color-swatch {
+//  width: 30px;
+//  height: 30px;
+//  margin-bottom: 3px;
+//}
+//
+//#order-form {
+//  padding: $global-padding-double;
+//}
+//
+//.customer-info {
+//  background-color: $light-gray;
+//  padding: $global-padding;
+//  border: 1px solid $primary-color;
+//  margin-bottom: 1rem;
+//}
+//
+//
+//.order-info {
+//  background-color: $light-gray;
+//  padding: $global-padding;
+//  border: 1px solid $primary-color;
+//  margin-top: 1rem;
+//  margin-bottom: 1rem;
+//}
+//
+//.checkbox {
+//  display: block;
+//
+//  @include breakpoint(medium) {
+//    display: inline-block;
+//
+//  }
+//}
+//legend.finishing-options {
+//  background-color: $light-gray;
+//}
+//
+//.card {
+//  width: 100%;
+//}
